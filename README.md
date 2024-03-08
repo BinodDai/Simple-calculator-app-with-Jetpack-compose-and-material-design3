@@ -21,4 +21,4 @@ Before running this project, make sure you have the following installed:
 1. Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/BinodDai/Simple-calculator-app-with-Jetpack-compose-and-material-design-3.git
+git clone https://github.com/BinodDai/Simple-calculator-app-with-Jetpack-compose-and-material-design3.git
