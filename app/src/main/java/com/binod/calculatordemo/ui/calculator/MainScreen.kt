@@ -5,6 +5,7 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 
@@ -20,13 +21,15 @@ fun MainScreen(viewModel: CalculatorViewModel) {
             verticalArrangement = Arrangement.Top,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            DisplayArea(state.display, modifier = Modifier
-                .fillMaxWidth()
-                .weight(1f, fill = false))
+            DisplayArea(
+                state.display, modifier = Modifier
+                    .fillMaxWidth()
+                    .weight(1f, fill = false)
+            )
             Spacer(modifier = Modifier.height(32.dp))
-            KeyPad { intent ->
+            KeyPad(onIntent = { intent ->
                 viewModel.dispatch(intent)
-            }
+            }, hasDataToClear = { viewModel.hasDataToClear() })
         }
     }
 }
@@ -42,6 +45,7 @@ fun DisplayArea(display: String, modifier: Modifier = Modifier) {
         Text(
             text = display,
             style = MaterialTheme.typography.headlineMedium,
+            color = Color.Black,
             modifier = Modifier
                 .padding(16.dp)
                 .fillMaxWidth(),

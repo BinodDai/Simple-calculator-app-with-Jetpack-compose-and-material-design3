@@ -9,6 +9,11 @@ class CalculatorViewModel : ViewModel() {
     private val _state = mutableStateOf(CalculatorState())
     val state: State<CalculatorState> = _state
 
+
+    fun hasDataToClear(): Boolean {
+        return state.value.display.isNotEmpty() ?: false
+    }
+
     fun dispatch(intent: CalculatorIntent) {
         when (intent) {
             is CalculatorIntent.Number -> _state.value =
