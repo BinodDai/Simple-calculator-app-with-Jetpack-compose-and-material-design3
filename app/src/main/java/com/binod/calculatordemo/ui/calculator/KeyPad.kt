@@ -17,7 +17,7 @@ import kotlinx.coroutines.launch
 @Composable
 fun KeyPad(onIntent: (CalculatorIntent) -> Unit, hasDataToClear: () -> Boolean) {
     val buttons = listOf(
-        "1", "2", "3", "4", "5", "6", "7", "8", "9", "Delete", "0", "Clear"
+        "1", "2", "3", "4", "5", "6", "7", "8", "9", "Del", "0", "Clear"
     )
     val snackBarHostState = remember { SnackbarHostState() }
     val scope = rememberCoroutineScope()
@@ -51,7 +51,7 @@ private fun handleButtonAction(
 ) {
     scope.launch {
         when (button) {
-            "Delete", "Clear" -> if (hasDataToClear()) {
+            "Del", "Clear" -> if (hasDataToClear()) {
                 if (button == "Clear") {
                     val result = snackBarHostState.showSnackbar(
                         message = "Confirm clear all?",
