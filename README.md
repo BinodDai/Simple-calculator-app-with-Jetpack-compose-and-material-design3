@@ -16,18 +16,11 @@ Before running this project, make sure you have the following installed:
 - Android Studio
 - JDK (Java Development Kit)
 
-### Installation
 
-1. Clone the repository to your local machine:
-
-```bash
-git clone https://github.com/BinodDai/Simple-calculator-app-with-Jetpack-compose-and-material-design3.git
-
-
-#### Contribution
+# Contribution
 You are always welcome to contribute to this project. For contributing, feel free to [create an issue](https://github.com/BinodDai/Photos_App_Compose/issues) or submit a pull request.
 
-##### License
+# License
 [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
 
 Copyright 2024 Binod Basnet
@@ -43,3 +36,10 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
+
+# Installation
+
+1. Clone the repository to your local machine:
+
+```bash
+git clone https://github.com/BinodDai/Simple-calculator-app-with-Jetpack-compose-and-material-design3.git
