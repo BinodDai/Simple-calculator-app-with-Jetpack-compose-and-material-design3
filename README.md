@@ -23,10 +23,11 @@ Before running this project, make sure you have the following installed:
 ```bash
 git clone https://github.com/BinodDai/Simple-calculator-app-with-Jetpack-compose-and-material-design3.git
 
-# Contribution
+
+#### Contribution
 You are always welcome to contribute to this project. For contributing, feel free to [create an issue](https://github.com/BinodDai/Photos_App_Compose/issues) or submit a pull request.
 
-# License
+##### License
 [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
 
 Copyright 2024 Binod Basnet
